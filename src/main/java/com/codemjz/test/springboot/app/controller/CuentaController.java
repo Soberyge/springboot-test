@@ -2,6 +2,7 @@ package com.codemjz.test.springboot.app.controller;
 import static org.springframework.http.HttpStatus.OK;
 import static org.springframework.http.HttpStatus.CREATED;
 import com.codemjz.test.springboot.app.models.Cuenta;
+import com.codemjz.test.springboot.app.models.CuentaDTO;
 import com.codemjz.test.springboot.app.models.TransaccionDTO;
 import com.codemjz.test.springboot.app.services.CuentaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,12 +70,16 @@ public class CuentaController {
 
     /**
      *
-     * @param cuenta
+     * @param cuentaDTO
      * @return cuenta guardada
      */
     @PostMapping
     @ResponseStatus(CREATED)
-    public Cuenta guardar(@RequestBody final Cuenta cuenta) {
+    public Cuenta guardar(@RequestBody final CuentaDTO cuentaDTO) {
+        Cuenta cuenta = new Cuenta(
+                cuentaDTO.getId(),
+                cuentaDTO.getNombre(),
+                cuentaDTO.getSaldo());
         return cuentaService.save(cuenta);
     }
 }
