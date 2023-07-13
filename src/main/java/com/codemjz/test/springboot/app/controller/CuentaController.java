@@ -45,7 +45,7 @@ public class CuentaController {
      * @return ResponseEntity Transeferencia OK
      */
     @PostMapping("/transferir")
-    public ResponseEntity<?> transferir(@RequestBody final TransaccionDTO dto) {
+    public ResponseEntity transferir(@RequestBody final TransaccionDTO dto) {
         cuentaService.transferir(dto.getCuentaOrigenId(),
                 dto.getCuentaDestinoId(),
                 dto.getMonto(),
