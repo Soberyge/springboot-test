@@ -1,12 +1,11 @@
 package com.codemjz.test.springboot.app;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public  class SpringbootTestApplication {
-
-
+public class SpringbootTestApplication {
 
     /**
      * @param args

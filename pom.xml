@@ -110,7 +110,7 @@
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>3.3.0</version>
 				<configuration>
-
+					<suppressionsLocation>checkstyle-supressions.xml</suppressionsLocation>
 				</configuration>
 				<reportSets>
 					<reportSet>

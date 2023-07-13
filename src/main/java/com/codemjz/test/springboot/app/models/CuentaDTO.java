@@ -17,25 +17,6 @@ public class CuentaDTO {
     private BigDecimal saldo;
 
     /**
-     * constructor.
-     */
-    public CuentaDTO() {
-    }
-
-    /**
-     *
-     * @param setId
-     * @param setNombre
-     * @param setSaldo
-     */
-    public CuentaDTO(final Long setId, final String setNombre,
-                  final BigDecimal setSaldo) {
-        this.id = setId;
-        this.nombre = setNombre;
-        this.saldo = setSaldo;
-    }
-
-    /**
      *
      * @return id
      */
@@ -82,5 +63,4 @@ public class CuentaDTO {
     public void setSaldo(final BigDecimal setSaldo) {
         this.saldo = setSaldo;
     }
-
 }
