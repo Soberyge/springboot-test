@@ -35,7 +35,6 @@ public class CuentaController {
     @GetMapping("/{id}")
     @ResponseStatus(OK)
     public Cuenta detalle(@PathVariable final Long id) {
-    //public Cuenta detalle(@PathVariable(name="id") Long id) {
         return cuentaService.findById(id);
     }
 
@@ -78,5 +77,4 @@ public class CuentaController {
     public Cuenta guardar(@RequestBody final Cuenta cuenta) {
         return cuentaService.save(cuenta);
     }
-
 }
