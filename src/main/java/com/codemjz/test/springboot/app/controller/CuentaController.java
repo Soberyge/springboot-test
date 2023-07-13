@@ -78,9 +78,9 @@ public class CuentaController {
     @ResponseStatus(CREATED)
     public Cuenta guardar(@RequestBody final CuentaDTO cuentaDTO) {
         Cuenta cuenta = new Cuenta(
-                cuentaDTO.getId(),
-                cuentaDTO.getNombre(),
-                cuentaDTO.getSaldo());
+                cuentaDTO.getIdDto(),
+                cuentaDTO.getNombreDto(),
+                cuentaDTO.getSaldoDto());
         return cuentaService.save(cuenta);
     }
 }

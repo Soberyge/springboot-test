@@ -20,7 +20,7 @@ public class CuentaDTO {
      *
      * @return id
      */
-    public Long getId() {
+    public Long getIdDto() {
         return id;
     }
 
@@ -36,7 +36,7 @@ public class CuentaDTO {
      *
      * @return nombre
      */
-    public String getNombre() {
+    public String getNombreDto() {
         return nombre;
     }
 
@@ -52,7 +52,7 @@ public class CuentaDTO {
      *
      * @return saldo
      */
-    public BigDecimal getSaldo() {
+    public BigDecimal getSaldoDto() {
         return saldo;
     }
 
